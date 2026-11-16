@@ -224,3 +224,11 @@ footer .l a{margin-left:0}
   .pills{grid-template-columns:1fr 1fr}
   .nav nav a:not(:last-child){display:none}
 }
+
+/* Official Google Play badge: if assets/google-play-badge.svg exists it is shown; otherwise the drawn badge is the fallback. */
+.gpwrap .badge{display:none}
+.gpwrap.nofile .badge{display:inline-flex}
+.gpwrap.nofile .gpimg{display:none}
+.gpimg img{height:60px;width:auto;display:block}
+.gpwrap{display:flex;justify-content:center}
+.gpimg{display:block;line-height:0}
