@@ -67,7 +67,7 @@ figure{margin:0}
 .privacy-band h2{color:#fff}
 .privacy-band .sub{color:#c9cfdf}
 .pills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:34px}
-.pill{border:1px solid rgba(233,184,114,.35);border-radius:16px;padding:18px;text-align:left;font-size:15px;color:#e9e2d3}
+.pill{display:block;border:1px solid rgba(233,184,114,.35);border-radius:16px;padding:18px;text-align:left;font-size:15px;color:#e9e2d3}
 .pill b{display:block;color:var(--gold);font-family:var(--serif);font-size:18px;margin-bottom:4px}
 
 .get{text-align:center}
