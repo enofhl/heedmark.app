@@ -1,66 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17130f">
-  <meta name="description" content="Heedmark privacy policy.">
-  <title>Privacy Policy — Heedmark</title>
-  <link rel="icon" href="assets/heedmark-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Heedmark</title>
+<meta name="description" content="How Heedmark handles your data. Short version: it stays with you.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="./"><img src="assets/heedmark-mark.svg" alt=""><span>Heedmark</span></a>
-    <nav class="navlinks" aria-label="Main navigation">
-      <a href="./">Home</a>
-      <a href="privacy.html" aria-current="page">Privacy</a>
-    </nav>
-  </div>
-</header>
-<main class="wrap page">
-  <div class="eyebrow">Your reflections are personal</div>
-  <h1>Privacy policy</h1>
-  <p class="updated">Effective date: November 14, 2026</p>
-  <p>Heedmark is a devotional audiobook companion. This policy explains what information the app uses and how it is handled.</p>
+<div class="docbar"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Heedmark</a>
+  <nav><a href="index.html">Home</a></nav>
+</div></header>
 
-  <div class="notice"><strong>In brief:</strong> Heedmark is designed to keep your library, journal entries, prayer requests, and listening progress on your device. The app does not require you to create an account.</div>
+<main class="wrap doc">
+<h1>Privacy Policy</h1>
+<p class="meta">Effective November 15, 2026 · Applies to the Heedmark app for Android</p>
 
-  <h2>Information you choose to store</h2>
-  <p>When you use Heedmark, you may create journal entries, prayer requests, and saved audio snippets, and the app records listening progress and library details. These may include the text you enter, dates, audiobook titles, and playback timestamps. Based on the app's current design, this information is stored locally on your device using its app storage.</p>
+<div class="callout"><b>The short version.</b> Heedmark has no accounts and no servers of its own. Your library, journal, prayers, and listening positions stay on your phone and in a file in a folder you choose. We don't collect, sell, or share your personal information, and the app has no ads or analytics.</div>
 
-  <h2>Audio files and folder access</h2>
-  <p>You choose which device folder Heedmark can use to find your audiobooks. The app uses that access to list and play supported audio files. Your audiobook files remain where you stored them; Heedmark does not upload them to a Heedmark server.</p>
+<h2>What Heedmark stores</h2>
+<p>To work, the app keeps the following information. All of it is created by you or read from files you point the app to.</p>
+<ul>
+  <li><b>Library details:</b> the location, title, author, and chapter lengths of audiobooks in the folder you select, plus your listening position in each book.</li>
+  <li><b>Journal entries:</b> your text, tags, and the book and timestamp an entry is linked to, including saved highlights.</li>
+  <li><b>Prayer requests:</b> your text, reminder frequency, updates, and status (active, answered, discontinued).</li>
+  <li><b>Settings:</b> things like the sleep timer and library sort order.</li>
+</ul>
+<p>This information is stored on your device. It is not sent to the developer or to any server operated by the developer.</p>
 
-  <h2>Sharing</h2>
-  <p>If you choose to share an audio snippet or other content, Heedmark passes the item to your device's sharing feature. The content is then handled by the app or service you select, under that provider's own privacy practices. Sharing is initiated by you.</p>
+<h2>Your data file</h2>
+<p>Heedmark can save a copy of the information above to a file named <code>heedmark_data.json</code> (and a backup copy) in the audiobooks folder you choose, so it survives reinstalling the app and can be moved to another phone. This file stays in your folder. <b>It is plain text and not encrypted</b>, so keep that folder private. If you place the folder inside a cloud-sync service (for example a cloud drive), that service will handle the file under its own terms.</p>
 
-  <h2>Information collected by the developer</h2>
-  <p>The current app design described for this release does not require an account or a Heedmark-hosted service to store your journal, prayers, library, or playback position. This policy does not make claims about information that your operating system, app store, or a third-party app may collect independently.</p>
+<h2>Permissions the app asks for</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Access to your audio files / the folder you pick</td><td>To find and play your audiobooks, and to save the data file in the folder you grant. Access is through Android's system folder picker.</td></tr>
+<tr><td>Notifications</td><td>To show playback controls on the lock screen and notification shade.</td></tr>
+<tr><td>Foreground service (media playback) and wake lock</td><td>To keep audio playing when the screen is off.</td></tr>
+<tr><td>Biometric / device authentication</td><td>Only if you turn on the Journal lock. Heedmark asks Android to verify you. Your fingerprint, face data, or PIN is never seen or stored by the app.</td></tr>
+<tr><td>Internet</td><td>Used only to download the app's fonts (see below).</td></tr>
+</table>
 
-  <h2>Notifications and device permissions</h2>
-  <p>Heedmark may request access needed to select and read audio files, play audio in the background, and display playback controls or notifications. You can manage app permissions through your device settings. If notification or reminder features are enabled in a future version, their behavior will be described here.</p>
+<h2>Network use and third parties</h2>
+<p>Heedmark does not upload your content anywhere. The one network activity is downloading its typefaces (Playfair Display and Inter) from Google Fonts. When that happens, Google receives standard connection information such as your IP address, handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. No journal, prayer, or listening data is included in those requests.</p>
+<p>This website loads the same fonts from Google Fonts. It does not use cookies, analytics, or ad trackers.</p>
 
-  <h2>Data retention and deletion</h2>
-  <p>Your locally stored app data remains on your device until you delete it, clear the relevant data within the app, or uninstall Heedmark. Clearing the audiobook library is intended to remove library entries, not your journal or prayer entries. Device backups, if enabled, are governed by your operating system and backup provider.</p>
+<h2>Sharing</h2>
+<p>When you choose to share a snippet clip or text, Heedmark hands it to Android's share sheet and the app you pick receives it. Heedmark does not see or control what happens next, and nothing is shared unless you tap Share.</p>
 
-  <h2>Children's privacy</h2>
-  <p>Heedmark is not designed to knowingly collect personal information from children through a developer-operated account or server.</p>
+<h2>Your choices and deleting your data</h2>
+<ul>
+  <li>Edit or delete any journal entry, prayer, or highlight inside the app.</li>
+  <li>"Clear library" in Settings removes the audiobook list (not your audio files, journal, or prayers).</li>
+  <li>To remove everything, uninstall the app and delete <code>heedmark_data.json</code> and <code>heedmark_data.backup.json</code> from your data folder.</li>
+  <li>The Journal lock can be turned on or off in Settings, and is stored per device.</li>
+</ul>
 
-  <h2>Changes to this policy</h2>
-  <p>This policy may be updated as Heedmark's features or data practices change. The effective date above will be revised when changes are made. Please review this page periodically.</p>
+<h2>Children</h2>
+<p>Heedmark is not directed to children under 13 and does not knowingly collect personal information from anyone, since it collects none.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy? Contact the Heedmark developer at <strong>prundled@gmail.com</strong>.</p>
+<h2>Changes to this policy</h2>
+<p>If the app's data practices change, for example by adding encryption or any online feature, this page will be updated and the effective date above will change.</p>
 
-  <p><a class="text-link" href="./">← Back to Heedmark</a></p>
+<h2>Contact</h2>
+<p>Questions about this policy: <b>[add your contact email here]</b></p>
 </main>
-<footer>
-  <div class="wrap foot">
-    <span>© 2026 Heedmark</span>
-    <span><a href="./">Home</a> &nbsp;·&nbsp; Privacy policy</span>
-  </div>
-</footer>
+
+<footer><div class="wrap">
+  <div class="l">© 2026 Heedmark. <a href="index.html">Home</a></div>
+  <div><em>Listen. Mark. Reflect.</em></div>
+</div></footer>
 </body>
 </html>
